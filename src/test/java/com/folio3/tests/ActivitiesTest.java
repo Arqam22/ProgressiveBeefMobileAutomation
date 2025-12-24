@@ -33,7 +33,7 @@ public class ActivitiesTest {
     void testActivitySubmissionFlow() {
         activitiesPage.openActivities();
         assertTrue(activitiesPage.areTabsVisible(), "All, Assigned, and Unassigned tabs should be visible");
-
+        System.out.println("tabs appearing properly");
         activitiesPage.searchActivity("Log17a");
         activitiesPage.clickActivity("Log17a");
         activitiesPage.clickViewSubmission();
